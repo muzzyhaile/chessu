@@ -1,0 +1,6 @@
+[auth]
+enabled = true
+
+[functions]
+[functions.server]
+verify_jwt = false

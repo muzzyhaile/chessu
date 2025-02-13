@@ -1,0 +1,12 @@
+[build]
+  base = "client"
+  command = "pnpm build"
+  publish = ".next"
+
+[build.environment]
+  NEXT_PUBLIC_API_URL = "https://your-backend-url.com"
+  NEXT_PUBLIC_SOCKET_URL = "wss://your-backend-url.com"
+  NODE_VERSION = "20"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
